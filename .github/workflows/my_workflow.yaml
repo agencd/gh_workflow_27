@@ -12,6 +12,6 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: my name step
-        run: echo My name is ${{ github.events.inputs.username }}
+        run: echo My name is ${{ github.event.inputs.username }}
 
 
