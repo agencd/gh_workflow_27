@@ -2,7 +2,8 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
-      username:
+      Username:
+        description: Who is triggering this workflow - TELL ME YOUR NAME ???
         type: string
 
 jobs:
