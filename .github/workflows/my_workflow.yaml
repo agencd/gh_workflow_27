@@ -2,8 +2,11 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
-      Username:
-        description: Who is triggering this workflow - TELL ME YOUR NAME ???
+      book_name:
+        description: Name of the book
+        type: string
+      author_name:
+        description: Author of the book
         type: string
 
 jobs:
@@ -12,7 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: my name step
-        run: echo My name is ${{ github.event.inputs.username }}
+      - name: My book
+        run: |
+          echo "Once upon a time in a faraway land"
+          echo "${{ github.event.inputs.book_name }} was written by ${{ github.event.inputs.author_name }}"
+          echo "This whimsical tale takes you on a journey through a magical forest where every flower could talk."
+          echo "Will you explore its secrets?
 
 
