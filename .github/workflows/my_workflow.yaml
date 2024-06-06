@@ -20,6 +20,6 @@ jobs:
           echo "Once upon a time in a faraway land"
           echo "${{ github.event.inputs.book_name }} was written by ${{ github.event.inputs.author_name }}"
           echo "This whimsical tale takes you on a journey through a magical forest where every flower could talk."
-          echo "Will you explore its secrets?
+          echo "Will you explore its secrets?"
 
 
